@@ -28,6 +28,7 @@ export default function Router() {
     },
     {
       path: '',
+      
       children: [
         { element: withAuthGuard(<Navigate to={PATH_AFTER_LOGIN} replace />), index: true },
         { path: 'home', element: withGuestGuard(<Home />) },

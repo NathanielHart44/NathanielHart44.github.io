@@ -3,8 +3,9 @@ import MainStyle from './components/MainStyle';
 import NotistackProvider from './components/NotistackProvider';
 import ThemeLocalization from './components/ThemeLocalization';
 import MetadataProvider from './contexts/MetadataContext';
-import Router from './routes';
+// import Router from './routes';
 import ThemeProvider from './theme';
+import Home from './pages/Home';
 
 // ----------------------------------------------------------------------
 
@@ -15,7 +16,8 @@ function App() {
         <MetadataProvider>
           <NotistackProvider>
             <MainStyle>
-              <Router />
+              {/* <Router /> */}
+              <Home />
             </MainStyle>
           </NotistackProvider>
         </MetadataProvider>
